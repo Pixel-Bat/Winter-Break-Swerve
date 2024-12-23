@@ -5,7 +5,6 @@
 package frc.robot;
 
 import frc.robot.Constants.OperatorConstants;
-import frc.robot.commands.Autos;
 
 import frc.robot.subsystems.SwerveSubsystem;
 import edu.wpi.first.math.MathUtil;
@@ -36,7 +35,7 @@ public class RobotContainer {
   Command driveFieldOrientedAnglularVelocity = drivebase.driveCommand(
       () -> MathUtil.applyDeadband(driverController.getLeftY() * -1, OperatorConstants.LEFT_Y_DEADBAND),
       () -> MathUtil.applyDeadband(driverController.getLeftX() * -1, OperatorConstants.LEFT_X_DEADBAND),
-      () -> driverController.getRightX() * -0.6);
+      () -> driverController.getRightX() * -OperatorConstants.ROTATION_SCALE);
 
   
   private void configureBindings() {

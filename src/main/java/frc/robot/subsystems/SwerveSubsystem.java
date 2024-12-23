@@ -46,7 +46,7 @@ public class SwerveSubsystem extends SubsystemBase {
     return run(() -> {
       swerveDrive.drive(SwerveMath.scaleTranslation(new Translation2d(
             translationX.getAsDouble() * swerveDrive.getMaximumVelocity(),
-            translationY.getAsDouble() * swerveDrive.getMaximumVelocity()), 0.4),
+            translationY.getAsDouble() * swerveDrive.getMaximumVelocity()), OperatorConstants.TRANSLATION_SCALE),
         Math.pow(angularRotationX.getAsDouble(), 3) * swerveDrive.getMaximumAngularVelocity(),
         OperatorConstants.FIELD_CENTRIC,
         false);

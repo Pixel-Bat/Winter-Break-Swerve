@@ -20,6 +20,9 @@ public final class Constants {
     public static final double LEFT_Y_DEADBAND  = 0.05;
     public static final double RIGHT_X_DEADBAND = 0.05;
 
+    public static final double TRANSLATION_SCALE  = 0.5;
+    public static final double ROTATION_SCALE     = 0.3;
+
     public static final boolean FIELD_CENTRIC = true;
   }
   public static final double MAX_SPEED = 4.5;
