@@ -52,4 +52,11 @@ public class SwerveSubsystem extends SubsystemBase {
         false);
     });
   }
+
+  public Command zeroGyro(){
+    return run( () -> {
+      swerveDrive.zeroGyro();
+    });
+    
+  }
 }

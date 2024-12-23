@@ -39,7 +39,7 @@ public class RobotContainer {
 
   
   private void configureBindings() {
-    
+    driverController.button(1).onTrue(drivebase.zeroGyro());
   }
 
   /**
