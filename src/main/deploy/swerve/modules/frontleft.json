@@ -3,14 +3,14 @@
     "front": 9,
     "left": 9
   },
-  "absoluteEncoderOffset": 0,
+  "absoluteEncoderOffset": 225,
   "drive": {
-    "type": "krakenx60",
+    "type": "talonfx",
     "id": 2,
     "canbus": "rio"
   },
   "angle": {
-    "type": "sparkmax_neo",
+    "type": "sparkmax",
     "id": 1,
     "canbus": null
   },
@@ -20,7 +20,7 @@
     "canbus": null
   },
   "inverted": {
-    "drive": false,
+    "drive": true,
     "angle": false
   },
   "absoluteEncoderInverted": false
